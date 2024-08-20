@@ -1,0 +1,29 @@
+body {
+  background-color: #b0c4de;
+  background-image: url('dogs.gif');
+}
+
+h1 {
+  background-color: #6495ed;
+}
+
+h1.prinicapl {
+  color: red;
+  text-align: center;
+}
+
+h1.secundaria {
+  color: black;
+  text-align: left;
+}
+
+#para1 {
+  color: red;
+  text-align: center;
+}
+
+p {
+  color: blue;
+  text-align: left;
+  background-color: #e0ffff;
+}
