@@ -1,0 +1,127 @@
+/* Exemplo 1 */
+
+p.serif {
+  color: purple;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+p.sansserif {
+  color: darkgreen;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+}
+
+p.cursive {
+  color: orangered;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* Exemplo 2 */
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:active {
+  color: green;
+  font: 30px Arial;
+}
+
+/* Exercício 1 */
+
+h1 {
+  text-align: center;
+}
+
+p.data {
+  text-align: right;
+  color: blue;
+  font-size: 10px;
+}
+
+p.main {
+  text-align: justify;
+  font-size: 14px;
+}
+
+/* Exercício 2 */
+
+p.tipo1 {
+  text-align: left;
+  background-color: cyan;
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+p.tipo2 {
+  text-align: center;
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Exercício 3 */
+
+ul.a {
+  list-style: circle;
+  color: red;
+}
+
+ul.b {
+  list-style: square;
+}
+
+ol.c {
+  list-style: upper-roman;
+  color: blue;
+}
+
+ol.d {
+  list-style: lower-alpha;
+  font-size: 20px;
+}
+
+/* Exercício 4 */
+
+table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+tr.intercalado {
+  background-color: lightblue;
+}
+
+th,
+td {
+  padding: 7px;
+}
+
+th {
+  text-align: left;
+  border: thin solid green;
+  background-color: blue;
+  color: white;
+}
+
+td {
+  border: thin solid gray;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="formulario.css" />
+    <title>Cadastro Jogos</title>
+  </head>
+  <body>
+    <form name="cadastro" action="submetido.html" method="get" target="_blank">
+      <table>
+        <caption>
+          Cadastro Jogos
+        </caption>
+        <tr>
+          <td colspan="3">Nome: <input type="text" name="nome" /></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            Curso:
+            <select name="curso">
+              <option disabled selected>-- Selecione --</option>
+              <option value="EA">Engenharia de Automação</option>
+              <option value="EC">Engenharia de Computação</option>
+              <option value="SI">Sistemas de Informação</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Matrícula: <input type="number" name="matricula" /></td>
+          <td>
+            Ano:
+            <select name="ano">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">Jogos de preferência</td>
+        </tr>
+        <tr>
+          <td colspan=""><input type="checkbox" name="jogos" value="volei" /> Vôlei</td>
+          <td colspan=""><input type="checkbox" name="jogos" value="basquete" /> Basquete</td>
+          <td colspan=""><input type="checkbox" name="jogos" value="handebol" /> Handebol</td>
+        </tr>
+        <tr>
+          <td colspan=""><input type="checkbox" name="jogos" value="tenis" /> Tênis</td>
+          <td colspan=""><input type="checkbox" name="jogos" value="futebol" /> Futebol</td>
+          <td colspan=""><input type="checkbox" name="jogos" value="xadrez" /> Xadrez</td>
+        </tr>
+        <tr>
+          <td colspan="3">Dias de preferência</td>
+        </tr>
+        <tr>
+          <td colspan=""><input type="radio" name="dias" value="seg" /> Segunda</td>
+          <td colspan=""><input type="radio" name="dias" value="ter" /> Terça</td>
+          <td colspan=""><input type="radio" name="dias" value="qua" /> Quarta</td>
+        </tr>
+        <tr>
+          <td colspan=""><input type="radio" name="dias" value="qui" /> Quinta</td>
+          <td colspan=""><input type="radio" name="dias" value="sex" /> Sexta</td>
+          <td colspan=""><input type="radio" name="dias" value="sab" /> Sábado</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="Enviar" class="enviar" /></td>
+          <td><input type="reset" value="Limpar" class="limpar" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
