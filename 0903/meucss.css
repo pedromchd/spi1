@@ -1,0 +1,72 @@
+body {
+  background-image: url("ceu.jpg");
+}
+
+table {
+  width: 600px;
+  height: 400px;
+  font-family: Arial, sans-serif;
+  border: thin solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px;
+  border: thin solid black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+td.topo {
+  vertical-align: top;
+}
+
+td.fundo {
+  vertical-align: bottom;
+}
+
+td.azulescuro {
+  background-color: darkblue;
+  color: white;
+}
+
+td.rosa {
+  background-color: pink;
+}
+
+td.verdeescuro {
+  background-color: darkgreen;
+}
+
+td.cinza {
+  background-color: gray;
+}
+
+td.marrom {
+  background-color: brown;
+}
+
+td.preto {
+  background-color: black;
+  color: white;
+}
+
+td.verdeclaro {
+  background-color: lightgreen;
+}
+
+td.lilas {
+  background-color: plum;
+}
+
+td.vermelho {
+  background-color: red;
+}
+
+td.azulclaro {
+  background-color: lightblue;
+}
+
+td.laranja {
+  background-color: orange;
+}
