@@ -1,0 +1,30 @@
+table {
+  border: thin solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("comidas.jpg");
+  background-size: cover;
+}
+
+td,
+th {
+  padding: 0.5rem;
+}
+
+input,
+select,
+textarea {
+  border: 0;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+  padding: 0.5rem;
+}
+
+.botao {
+  width: 8rem;
+  font-weight: bold;
+}
+
+.centralizado {
+  text-align: center;
+}

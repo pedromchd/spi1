@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="meucss.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form action="submetido.html" method="get">
+      <table>
+        <tr>
+          <th colspan="4">PREENCHA SEUS DADOS CORRETAMENTE</th>
+        </tr>
+        <tr>
+          <td colspan="2">NOME: <input type="text" name="nome" /></td>
+          <td>IDADE: <input type="number" name="idade" /></td>
+          <td>SENHA: <input type="password" name="senha" /></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            Esportes que pratica:
+            <input type="checkbox" name="esportes" value="volei" />Volei
+            <input type="checkbox" name="esportes" value="futebol" />Futebol
+            <input type="checkbox" name="esportes" value="handbol" />Handbol
+            &nbsp; Outro: <input type="text" name="esportes" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            Gosta de doces?
+            <input type="radio" name="doces" value="sim" />Sim
+            <input type="radio" name="doces" value="nao" />Não
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            Selecione duas opções de comida:
+            <select name="comida" multiple>
+              <option value="lasanha">Lasanha</option>
+              <option value="pizza">Pizza</option>
+              <option value="churrasco">Churrasco</option>
+              <option value="arrozefeijao">Arroz e Feijão</option>
+              <option value="frangofrito">Frango Frito</option>
+            </select>
+          </td>
+        </tr>
+        <tr class="centralizado">
+          <td colspan="4">
+            <textarea name="historia" cols="92" rows="8">
+              Conte uma história sobre comida
+            </textarea>
+          </td>
+        </tr>
+        <tr class="centralizado">
+          <td colspan="2">
+            <input type="submit" value="ENVIAR" class="botao" />
+          </td>
+          <td colspan="2">
+            <input type="reset" value="LIMPAR" class="botao" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
