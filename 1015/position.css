@@ -1,0 +1,9 @@
+h2.pos_left {
+  position: fixed;
+  left: -20px;
+}
+
+h2.pos_right {
+  position: fixed;
+  left: 20px;
+}
