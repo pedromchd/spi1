@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+      }
+    </script>
+  </head>
+  <body>
+    Entre com seu nome: <input type="text" id="fname" onblur="myFunction()" />
+    <p>
+      Quando você sair do input (o input perder o foco), a função será chamada e
+      irá transformar o texto em upper case.
+    </p>
+  </body>
+</html>

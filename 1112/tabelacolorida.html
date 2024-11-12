@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+      table {
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+      td {
+        text-align: center;
+        border: 1px solid black;
+      }
+    </style>
+    <script>
+      function changeBGColor(element, color) {
+        element.style.backgroundColor = color;
+      }
+      function resetBGColor(element) {
+        element.style.backgroundColor = "unset";
+      }
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td onmouseover="changeBGColor(this, '#ff0')" onmouseout="resetBGColor(this)">Amarelo</td>
+        <td onmouseover="changeBGColor(this, '#f00')" onmouseout="resetBGColor(this)">Vermelho</td>
+        <td onmouseover="changeBGColor(this, '#fbb')" onmouseout="resetBGColor(this)">Rosa</td>
+      </tr>
+      <tr>
+        <td onmouseover="changeBGColor(this, '#000')" onmouseout="resetBGColor(this)">Preto</td>
+        <td onmouseover="changeBGColor(this, '#ff0')" onmouseout="resetBGColor(this)">Amarelo</td>
+        <td onmouseover="changeBGColor(this, '#0f0')" onmouseout="resetBGColor(this)">Verde</td>
+      </tr>
+      <tr>
+        <td onmouseover="changeBGColor(this, '#00f')" onmouseout="resetBGColor(this)">Azul</td>
+        <td onmouseover="changeBGColor(this, '#f00')" onmouseout="resetBGColor(this)">Vermelho</td>
+        <td onmouseover="changeBGColor(this, '#ff0')" onmouseout="resetBGColor(this)">Amarelo</td>
+      </tr>
+    </table>
+  </body>
+</html>

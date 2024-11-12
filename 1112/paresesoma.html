@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Números Pares e Soma</title>
+    <script>
+      function escreverNumerosParesESoma() {
+        let soma = 0;
+        document.write("<h1>Números Pares de 85 a 901</h1>");
+        for (let i = 85; i <= 901; i++) {
+          if (i % 2 === 0) {
+            document.write(i + "<br>");
+            soma += i;
+          }
+        }
+        document.write("<h2>Soma dos Números Pares: " + soma + "</h2>");
+      }
+    </script>
+  </head>
+  <body onload="escreverNumerosParesESoma()"></body>
+</html>
