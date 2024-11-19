@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function formatarNome(nome) {
+        nome.value = nome.value.toUpperCase();
+      }
+
+      function validarCPF(cpf) {
+        if (!/^\d{3}\.\d{3}\.\d{3}-\d{2}$/.test(cpf.value)) {
+          alert("CPF inválido");
+          cpf.value = "";
+        }
+      }
+
+      function validarData(data) {
+        if (!/^\d{2}\/\d{2}\/\d{4}$/.test(data.value)) {
+          alert("Data inválida");
+          data.value = "";
+        }
+      }
+
+      function verificarSenha(senha) {
+        if (senha.value != document.getElementById("senha").value) {
+          alert("Senhas diferentes");
+          senha.value = "";
+        }
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="submetido.html" method="get">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" onblur="formatarNome(this)" required>
+      <br>
+      <label for="data">Data de Nascimento:</label>
+      <input type="text" name="data" id="data" onblur="validarData(this)" required>
+      <br>
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" id="cpf" onblur="validarCPF(this)" required>
+      <br>
+      <label for="senha">Senha:</label>
+      <input type="password" name="senha" id="senha" required>
+      <br>
+      <label for="confirma">Confirmação de Senha:</label>
+      <input type="password" name="confirma" id="confirma" onblur="verificarSenha(this)" required>
+      <br>
+      <input type="submit" value="OK">
+    </form>
+  </body>
+</html>
