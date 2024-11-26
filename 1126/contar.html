@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function contar() {
+        var inicial = parseInt(document.getElementById("inicial").value);
+        var final = parseInt(document.getElementById("final").value);
+        var numeros = document.getElementById("numeros");
+
+        for (var i = inicial; i <= final; i++) {
+          numeros.innerText += i + ", ";
+        }
+      }
+    </script>
+    <title>Contar</title>
+  </head>
+  <body>
+    <input
+      type="number"
+      name="inicial"
+      id="inicial"
+      placeholder="Valor inicial"
+    />
+    <input type="number" name="final" id="final" placeholder="Valor final" />
+    <button onclick="contar()">Contar</button>
+    <br />
+    <p id="numeros"></p>
+  </body>
+</html>

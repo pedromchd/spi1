@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="formulario.js"></script>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form action="submetido.html">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" onkeyup="validaNome(this)" onblur="capitalNome(this)" />
+      <br />
+      <label for="idade">Idade:</label>
+      <input type="text" name="idade" id="idade" onkeyup="validaIdade(this)" />
+      <br />
+      <label for="senha">Senha:</label>
+      <input type="password" name="senha" id="senha" onchange="contaCaracteres(this)" />
+      <br />
+      <label for="confirmarsenha">Confirmar senha:</label>
+      <input type="password" name="confirmarsenha" id="confirmarsenha" onchange="validaSenha(this)" />
+      <br />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
