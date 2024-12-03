@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <title>Exercício 1</title>
+    <style>
+      .vermelho {
+        color: red;
+      }
+      .verde {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="vermelho">Sou um parágrafo vermelho</p>
+    <p class="verde">Sou um parágrafo verde</p>
+    <script>
+      $(document).ready(function () {
+        $("p").hover(function () {
+          $(this).toggleClass("vermelho verde");
+        });
+      });
+    </script>
+  </body>
+</html>
